@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		350414DA26AC165100C07588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350414D926AC165100C07588 /* AppDelegate.swift */; };
 		350414DC26AC165100C07588 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350414DB26AC165100C07588 /* SceneDelegate.swift */; };
 		350414DE26AC165100C07588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350414DD26AC165100C07588 /* ViewController.swift */; };
-		350414E126AC165100C07588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350414DF26AC165100C07588 /* Main.storyboard */; };
 		350414E326AC165200C07588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350414E226AC165200C07588 /* Assets.xcassets */; };
 		350414E626AC165200C07588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350414E426AC165200C07588 /* LaunchScreen.storyboard */; };
+		350414EF26AC17DE00C07588 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 350414EE26AC17DE00C07588 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		350414D926AC165100C07588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		350414DB26AC165100C07588 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		350414DD26AC165100C07588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		350414E026AC165100C07588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		350414E226AC165200C07588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		350414E526AC165200C07588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		350414E726AC165200C07588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350414EF26AC17DE00C07588 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				350414D926AC165100C07588 /* AppDelegate.swift */,
 				350414DB26AC165100C07588 /* SceneDelegate.swift */,
 				350414DD26AC165100C07588 /* ViewController.swift */,
-				350414DF26AC165100C07588 /* Main.storyboard */,
 				350414E226AC165200C07588 /* Assets.xcassets */,
 				350414E426AC165200C07588 /* LaunchScreen.storyboard */,
 				350414E726AC165200C07588 /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = ChartsTest;
+			packageProductDependencies = (
+				350414EE26AC17DE00C07588 /* Charts */,
+			);
 			productName = ChartsTest;
 			productReference = 350414D626AC165100C07588 /* ChartsTest.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +112,9 @@
 				Base,
 			);
 			mainGroup = 350414CD26AC165100C07588;
+			packageReferences = (
+				350414ED26AC17DE00C07588 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 350414D726AC165100C07588 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +131,6 @@
 			files = (
 				350414E626AC165200C07588 /* LaunchScreen.storyboard in Resources */,
 				350414E326AC165200C07588 /* Assets.xcassets in Resources */,
-				350414E126AC165100C07588 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		350414DF26AC165100C07588 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				350414E026AC165100C07588 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		350414E426AC165200C07588 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT5ZADXQMP;
 				INFOPLIST_FILE = ChartsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.ChartsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT5ZADXQMP;
 				INFOPLIST_FILE = ChartsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.ChartsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		350414ED26AC17DE00C07588 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		350414EE26AC17DE00C07588 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 350414ED26AC17DE00C07588 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 350414CE26AC165100C07588 /* Project object */;
 }
